@@ -1,0 +1,20 @@
+<header class="navbar navbar-bright navbar--top" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+          <div style="height: 20px;"></div>
+        <a routerLink="" class="navbar-brand" id="a1">Home</a>
+            <a routerLink="signup" *ngIf="! ser.loggedIn()">SIGN_UP</a>
+            <a routerLink="login" *ngIf="! ser.loggedIn()">LOG_IN</a>
+            <a routerLink="book" >BOOKS</a>
+            <a routerLink="auth">AUTHORS</a>
+            <a routerLink="add" *ngIf="ser.loggedIn()">ADD</a>
+            <a routerLink="/" (click)="logout()" *ngIf="ser.loggedIn()">LOG_OuT</a>
+            
+            <div style="float: right; padding-right: 250px; font-size: 25px; " *ngIf="ser.loggedIn()"  >
+                <b><i></i></b>
+            </div>
+      </div>
+      <div style="height: 20px;"></div>
+    </div>
+  </header>
+  

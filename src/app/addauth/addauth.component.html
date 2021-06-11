@@ -1,0 +1,17 @@
+<br>
+<form (ngSubmit)="addauth()" #addauthdetails="ngForm"><br><br><br>
+    <label for="" style=" padding-left: 300px; " >AUTHOR &nbsp; NAME :  </label>
+    <input type="text" id="title" name="title" style="margin-left: 10px; width:375px;"  [(ngModel)]="model.title"  required><br><br><br>
+    <label for="" style="  padding-left: 400px; " >GENRE :  </label>
+    <input type="text" id="gen" name="gen" style="margin-left: 10px; width:375px;" [(ngModel)]="model.gen" required><br><br><br>
+    <label for="" style="padding-left: 220px;" >AUTHOR &nbsp; DISCRIPTION :  &nbsp;</label>
+   <textarea name="dis" id="dis"  cols="50" rows="5" [(ngModel)]="model.dis" required></textarea><br><br><br>
+    <label for="" style="padding-left: 370px;">IMAGE(url) :   
+         <input type="text" id="img" name="img" style="margin-left: 10px; width:375px;" pattern="https?://.+" [(ngModel)]="model.img" required><br><br><br>
+    </label>
+  
+    <br><br>
+        <input type="submit" value="ADD AUTHOR" [disabled]="addauthdetails.form.invalid" style=" color: midnightblue; font-family: 'Brush Script MT', cursive; margin-left: 450px; width: 225px; font-size: 25px;">
+    
+    </form>
+<br><br><br><br><br>

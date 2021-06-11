@@ -1,0 +1,56 @@
+<div id="masthead" class="dibs">  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1>LIBRARY
+            <p class="lead"></p>
+          </h1>
+        </div>
+      </div> 
+    </div>
+    <div class="container" id="sizee">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="top-spacer"> 
+            </div>
+          </div>
+        </div> 
+    </div>
+</div>
+
+
+<div class="container sizee1" >
+    <div class="row">  
+      <div class="col-md-12">   
+        <div class="panel">
+          <div class="panel-body" id="sizee4" >
+                <br><br><br>
+                <h1>WELCOME TO THE LIBRARY</h1>
+                <div id="frm0">
+                    <h3>Already a member ?  <a routerLink="/login" style="color: mediumblue;">login</a></h3><br>
+                <form id="frm" (ngSubmit)="login()" #userlogin="ngForm"><br><br>
+                <label for="" style="padding-left: 100px;" >NAME :  </label>
+                <input type="text" id="name" style="margin-left: 10px; width: 40%;" name="name" [(ngModel)]="model.name"  required><br><br><br>
+                <label for=""  style="padding-left: 90px;"  >EMAIL :  </label>
+                <input type="text" id="email" style="margin-left: 10px; width: 40%;" name="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" [(ngModel)]="model.email" required><br><br><br>
+                <label for=""  style="padding-left: 90px;"  >PHONE :  </label>
+                <input type="text" id="phone" style="margin-left: 10px; width: 40%;" name="phone" [(ngModel)]="model.phn" pattern="[0-9]{10}" required><br><br><br>
+                <label for=""  style="padding-left: 35px;" >PASSWORD :  </label>
+                <input type="password" id="password" style="margin-left: 10px; width: 40%;" name="password" [(ngModel)]="model.password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  required><br><br><br>
+                <label for=""  style="padding-left: -10%;" >RETYPE PASSWORD :  </label>
+                <input type="password" id="respassword" style="margin-left: 10px; width: 40%;" [style.border]='br' (keyup)="check()"  [(ngModel)]="repass" name="repassword" required><br><br><br>
+              
+                <input type="checkbox" style="margin-left: 150px; "  [(ngModel)]="re" name="re" required>I accept the all conditions
+                <br><br>
+                <input type="submit" value="SIGN UP" [disabled]="userlogin.invalid || checkpass == false "  style="font-family: 'Brush Script MT', cursive; width: 125px; font-size: 25px; margin-left: 200px;">
+                
+                </form>
+                </div> 
+                <br><br><br><br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+</div> 
+
+

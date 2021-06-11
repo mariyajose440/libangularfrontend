@@ -1,0 +1,42 @@
+.dibs{
+    margin-top: -50px;
+    height: 200px;
+}
+h1{
+    padding-left: 200px;
+    padding-top: 50px;
+}
+#sizee{
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: -50px;
+}
+.sizee1{
+    padding-left: 200px;
+}
+#sizee4{
+    border-left: 20px solid white;
+    border-right: 82px solid white;
+    border-top: 20px solid white;
+    border-bottom: 20px solid white;
+    margin-right: 200px;
+    background-color: white;
+
+}
+form{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 25px ;
+    font-weight: bold;
+    color: midnightblue; 
+}
+button{
+    float: right;
+    margin: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 25px;
+    background-color: mediumblue;
+    color: white;
+}

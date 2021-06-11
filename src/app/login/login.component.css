@@ -1,0 +1,49 @@
+.dibs{
+    margin-top: -50px;
+    height: 200px;
+}
+h1{
+    padding-left: 200px;
+    padding-top: 50px;
+}
+#sizee{
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: -50px;
+}
+.sizee1{
+    padding-left: 200px;
+}
+
+#frm{
+    font-family: 'Brush Script MT', cursive;
+     font-size: 25px; 
+}
+#frm0 label{
+    font-weight: bold;
+}
+#sizee4{
+    border-left: 20px solid white;
+    border-right: 82px solid white;
+    border-top: 20px solid white;
+    border-bottom: 20px solid white;
+    margin-right: 200px;
+    background-color: white;
+
+}
+.hide1{
+    padding-left: 200px;
+    margin-left: 200px ;
+    margin-right: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: -50px;
+    border: 1px solid white;
+    color: white;
+}
+input.ng-invalid {
+    border: 5px solid red;
+}
+input.ng-valid {
+    border: 5px solid rgb(34, 219, 34);
+}
